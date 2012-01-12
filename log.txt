@@ -1,0 +1,16 @@
+17:47:42: Log successfully created 0/11/17: 
+17:47:42: Engine: Initializing
+17:47:45: Resource Cache: Created
+17:47:45: Resource Cache: Directory: C:\Programming\Projects\Gray\gray\GameContent\
+17:47:45: GameStateManager: Initialized
+17:47:45: Resource Cache: Texture Loaded: Pixel.png
+17:47:45: Resource Cache: Texture Loaded: SplashScreen\sfmlLogo.png
+17:47:45: Resource Cache: Texture Loaded: SplashScreen\boostLogo.png
+17:47:45: Engine: Initialized
+17:47:45: Engine: Running
+17:47:50: Resource Cache: Texture Loaded: Crosshair.png
+17:47:50: Resource Cache: Font Loaded: Fonts\Lydian.ttf
+17:47:52: Engine: Ending
+17:47:52: Engine: Deleting All Components
+17:47:52: Engine: Components Successfully Deleted
+17:47:52: Log successfully ended
