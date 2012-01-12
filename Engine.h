@@ -21,7 +21,8 @@ namespace base
 
 		base::IntroState*		IntroState;
 		base::MenuState*		MenuState;
-		base::TestState*		TestState;
+		base::CJTestState*		CJTestState;
+		base::JoshTestState*	JoshTestState;
 
 		Engine();
 		~Engine();

@@ -88,6 +88,7 @@
     <ClCompile Include="GameStateManager.cpp" />
     <ClCompile Include="InterfaceManager.cpp" />
     <ClCompile Include="IntroState.cpp" />
+    <ClCompile Include="JoshTestState.cpp" />
     <ClCompile Include="Label.cpp" />
     <ClCompile Include="LinkLabel.cpp" />
     <ClCompile Include="Logger.cpp" />
@@ -98,7 +99,7 @@
     <ClCompile Include="Shapes.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="SpriteBatch.cpp" />
-    <ClCompile Include="TestState.cpp" />
+    <ClCompile Include="CJTestState.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Utility.cpp" />
   </ItemGroup>

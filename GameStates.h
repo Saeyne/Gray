@@ -13,7 +13,8 @@ namespace base
 
 	class IntroState;		//first start in the game, splash screens, leads to menu state
 	class MenuState;		//the menu at the beginning of the game
-	class TestState;		//test state for cj to practice in
+	class CJTestState;		//test state for cj to practice in
+	class JoshTestState;	//test state for josh to practice in
 
 	class GameState
 	{
@@ -65,8 +66,8 @@ namespace base
 	class MenuState : public GameState
 	{
 		base::Cursor* Cursor;
-		base::LinkLabel* singlePlayer;
-		base::LinkLabel* multiPlayer;
+		base::LinkLabel* cjtest;
+		base::LinkLabel* joshtest;
 		base::LinkLabel* Options;
 		base::LinkLabel* Quit;
 
@@ -79,12 +80,24 @@ namespace base
 	};
 
 	//test state for cj to learn in
-	class TestState : public GameState
+	class CJTestState : public GameState
 	{
 
 	public:
-		TestState(base::Engine& eng) : GameState(eng) { }
-		~TestState();
+		CJTestState(base::Engine& eng) : GameState(eng) { }
+		~CJTestState();
+		void Initialize();
+		void Update();
+		void Render();
+	};
+
+		//test state for cj to learn in
+	class JoshTestState : public GameState
+	{
+
+	public:
+		JoshTestState(base::Engine& eng) : GameState(eng) { }
+		~JoshTestState();
 		void Initialize();
 		void Update();
 		void Render();

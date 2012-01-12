@@ -10,13 +10,13 @@ namespace base
 		Cursor = new base::Cursor(sf::Sprite(engine.ResourceCache->GetTexture("Crosshair.png")));
 
 		//initialize our link labels
-		singlePlayer = new base::LinkLabel("Single Player");
-		singlePlayer->Text.SetPosition(100, 100);
-		singlePlayer->Text.SetFont(engine.ResourceCache->GetFont("Fonts\\Lydian.ttf"));
+		cjtest = new base::LinkLabel("CJ Test");
+		cjtest->Text.SetPosition(100, 100);
+		cjtest->Text.SetFont(engine.ResourceCache->GetFont("Fonts\\Lydian.ttf"));
 
-		multiPlayer = new base::LinkLabel("Multiplayer");
-		multiPlayer->Text.SetPosition(200, 150);
-		multiPlayer->Text.SetFont(engine.ResourceCache->GetFont("Fonts\\Lydian.ttf"));
+		joshtest = new base::LinkLabel("Josh Test");
+		joshtest->Text.SetPosition(200, 150);
+		joshtest->Text.SetFont(engine.ResourceCache->GetFont("Fonts\\Lydian.ttf"));
 
 		Options = new base::LinkLabel("Options");
 		Options->Text.SetPosition(300, 200);
@@ -30,8 +30,8 @@ namespace base
 		Interface = new base::InterfaceManager();
 
 		Interface->AddCursor(*Cursor);
-		Interface->AddLinkLabel(*singlePlayer);
-		Interface->AddLinkLabel(*multiPlayer);
+		Interface->AddLinkLabel(*cjtest);
+		Interface->AddLinkLabel(*joshtest);
 		Interface->AddLinkLabel(*Options);
 		Interface->AddLinkLabel(*Quit);
 
@@ -55,13 +55,13 @@ namespace base
 			if (Event.Type == sf::Event::MouseMoved)
 				Cursor->Update((sf::Vector2f)sf::Mouse::GetPosition(*engine.Window));
 
-			//if single player was pushed, switch to single player state
-			if (singlePlayer->Activated)
-				engine.Window->Close();
+			//if cj test was pushed, switch to cj test state
+			if (cjtest->Activated)
+				engine.GameStateManager->ChangeState(*engine.CJTestState);
 
-			//if multiplayer was pushed, switch to multiplayer state
-			if (multiPlayer->Activated)
-				engine.Window->Close();
+			//if josh test was pushed, switch to josh test state
+			if (joshtest->Activated)
+				engine.GameStateManager->ChangeState(*engine.JoshTestState);
 
 			//if options was pushed, switch to options state?
 			if (Options->Activated)

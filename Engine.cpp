@@ -30,8 +30,11 @@ namespace base
 		GameStateManager = new base::GameStateManager();
 		IntroState = new base::IntroState(*this);
 		MenuState = new base::MenuState(*this);
-		TestState = new base::TestState(*this);
-		GameStateManager->PushState(*IntroState);
+		CJTestState = new base::CJTestState(*this);
+		JoshTestState = new base::JoshTestState(*this);
+
+		//set our initial state
+		GameStateManager->PushState(*MenuState);
 
 		gLogger.Write("Engine: Initialized");
 	}
@@ -60,7 +63,8 @@ namespace base
 		delete GameStateManager;
 		delete IntroState;
 		delete MenuState;
-		delete TestState;
+		delete CJTestState;
+		delete JoshTestState;
 
 		gLogger.Write("Engine: Components Successfully Deleted");
 		

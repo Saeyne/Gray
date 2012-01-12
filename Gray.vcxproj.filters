@@ -72,9 +72,6 @@
     <ClCompile Include="MenuState.cpp">
       <Filter>Source Files\GameStates\States</Filter>
     </ClCompile>
-    <ClCompile Include="TestState.cpp">
-      <Filter>Source Files\GameStates\States</Filter>
-    </ClCompile>
     <ClCompile Include="GameState.cpp">
       <Filter>Source Files\GameStates</Filter>
     </ClCompile>
@@ -106,6 +103,12 @@
       <Filter>Source Files\Interface\Controls</Filter>
     </ClCompile>
     <ClCompile Include="IntroState.cpp">
+      <Filter>Source Files\GameStates\States</Filter>
+    </ClCompile>
+    <ClCompile Include="CJTestState.cpp">
+      <Filter>Source Files\GameStates\States</Filter>
+    </ClCompile>
+    <ClCompile Include="JoshTestState.cpp">
       <Filter>Source Files\GameStates\States</Filter>
     </ClCompile>
   </ItemGroup>
